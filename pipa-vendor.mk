@@ -275,7 +275,6 @@ PRODUCT_PACKAGES += \
     libssc \
     libssc_default_listener \
     libssccalapi \
-    libsubsystem_control \
     libsysmon_cdsp_skel \
     libthermalclient \
     libultrasound \
@@ -716,9 +715,7 @@ PRODUCT_PACKAGES += \
     rmt_storage \
     sensors.qti \
     sscrpcd \
-    ssr_diag \
     ssr_setup \
-    subsystem_ramdump \
     tftp_server \
     thermal-engine \
     time_daemon \
