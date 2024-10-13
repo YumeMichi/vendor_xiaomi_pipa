@@ -524,8 +524,6 @@ PRODUCT_PACKAGES += \
     libhdcp2p2prov \
     libhdcpsrm \
     libhdr_tm \
-    libhdrdynamic \
-    libhdrdynamicootf \
     libhexagon_nn_stub \
     libidl \
     libipebpsstriping \
