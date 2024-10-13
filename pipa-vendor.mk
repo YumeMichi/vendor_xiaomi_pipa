@@ -250,13 +250,25 @@ PRODUCT_PACKAGES += \
     libcdsprpc \
     libdapparamstorage \
     libdiag \
+    libdsutils \
     libfastcvdsp_stub \
     libfastcvopt \
     libhta_hexagon_runtime \
+    libidl \
+    libmdmdetect \
     libmdsprpc \
     libmmosal \
     libnpu \
     libopenvx \
+    libqmi \
+    libqmi_cci \
+    libqmi_client_qmux \
+    libqmi_common_so \
+    libqmi_csi \
+    libqmi_encdec \
+    libqmiservices \
+    libqrtr \
+    libqsocket \
     libscveCommon \
     libscveCommon_stub \
     libscveObjectSegmentation \
@@ -501,20 +513,17 @@ PRODUCT_PACKAGES += \
     libdpps \
     libdrmfs \
     libdrmtime \
-    libdsutils \
     libdualcam_optical_zoom_control \
     libhdcp1prov \
     libhdcp2p2prov \
     libhdcpsrm \
     libhdr_tm \
     libhexagon_nn_stub \
-    libidl \
     libipebpsstriping \
     libkeymasterdeviceutils \
     libkeymasterprovision \
     libkeymasterutils \
     libloadalgo_stub \
-    libmdmdetect \
     libmdmimgload \
     libmi_supernight_raw \
     libmiai_portraitsupernight \
@@ -543,16 +552,7 @@ PRODUCT_PACKAGES += \
     libpvr \
     libqcbor \
     libqisl \
-    libqmi \
-    libqmi_cci \
-    libqmi_client_qmux \
-    libqmi_common_so \
-    libqmi_csi \
-    libqmi_encdec \
-    libqmiservices \
-    libqrtr \
     libqseed3 \
-    libqsocket \
     libqtikeymaster4 \
     librawnrv2_shared \
     librmp \
