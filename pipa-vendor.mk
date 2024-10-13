@@ -264,27 +264,14 @@ PRODUCT_PACKAGES += \
     libscveObjectTracker \
     libscveObjectTracker_stub \
     libsdsprpc \
-    libsensorcal \
-    libsensorslog \
-    libsns_device_mode_stub \
-    libsns_fastRPC_util \
-    libsns_low_lat_stream_stub \
-    libsns_registry_skel \
-    libsnsapi \
-    libsnsdiaglog \
-    libssc \
-    libssc_default_listener \
-    libssccalapi \
     libsysmon_cdsp_skel \
     libthermalclient \
-    libultrasound \
     libvppclient \
     libvpphcp \
     libvpphvx \
     libvppimmotion \
     libvpplibrary \
     libvpptestutils \
-    sensors.ssc \
     unnhal-acc-hta \
     vendor.dolby.hardware.dms@2.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
@@ -576,16 +563,27 @@ PRODUCT_PACKAGES += \
     libsdm-diag \
     libsdm-disp-vndapis \
     libsdmextension \
+    libsensorcal \
+    libsensorslog \
     libsnpe_adsp \
     libsnpe_dsp_domains \
     libsnpe_dsp_domains_system \
     libsnpe_dsp_domains_v2 \
     libsnpe_dsp_domains_v2_system \
     libsnpe_dsp_domains_v3 \
+    libsns_device_mode_stub \
+    libsns_fastRPC_util \
+    libsns_low_lat_stream_stub \
+    libsns_registry_skel \
+    libsnsapi \
+    libsnsdiaglog \
     libsoc_helper \
     libsoc_helper_jni \
     libspcom \
     libspl \
+    libssc \
+    libssc_default_listener \
+    libssccalapi \
     libssd \
     libswregistrationalgo \
     libsymphony-cpu \
@@ -597,12 +595,14 @@ PRODUCT_PACKAGES += \
     libtriplecam_optical_zoom_control \
     libtrustedapploader \
     libtzdrmgenprov \
+    libultrasound \
     libvideofilter_only \
     libvidhance \
     libwvhidl \
     libwvkeybox \
     libxml2_vendor \
     libwvdrmengine \
+    sensors.ssc \
     unnhal-acc-adreno \
     unnhal-acc-common \
     unnhal-acc-hvx \
