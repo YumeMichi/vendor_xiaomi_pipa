@@ -285,8 +285,6 @@ PRODUCT_PACKAGES += \
     libvppimmotion \
     libvpplibrary \
     libvpptestutils \
-    libsns_device_mode_skel \
-    libsns_low_lat_stream_skel \
     sensors.ssc \
     unnhal-acc-hta \
     vendor.dolby.hardware.dms@2.0 \
