@@ -258,11 +258,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libOmxVpp.so"],
-			shared_libs: ["liblog", "libutils", "libbinder", "libcutils", "libOmxCore", "libvppclient", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "vendor.qti.hardware.capabilityconfigstore@1.0", "libhidlbase", "libhidltransport", "libhwbinder", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libutils", "libbinder", "libcutils", "libvppclient", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "vendor.qti.hardware.capabilityconfigstore@1.0", "libhidlbase", "libhidltransport", "libhwbinder", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libOmxVpp.so"],
-			shared_libs: ["liblog", "libutils", "libbinder", "libcutils", "libOmxCore", "libvppclient", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "vendor.qti.hardware.capabilityconfigstore@1.0", "libhidlbase", "libhidltransport", "libhwbinder", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libutils", "libbinder", "libcutils", "libvppclient", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "vendor.qti.hardware.capabilityconfigstore@1.0", "libhidlbase", "libhidltransport", "libhwbinder", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
@@ -2285,7 +2285,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libwfdmmsrc_proprietary.so"],
-			shared_libs: ["libbinder", "libmmosal", "liblog", "libutils", "libmmrtpencoder_proprietary", "libFileMux_proprietary", "libcutils", "libtinyalsa", "libwfdcommonutils_proprietary", "libwfdutils_proprietary", "libwfdconfigutils_proprietary", "libwfdaac_vendor", "libpng", "libwfdmminterface_proprietary", "libwfdcodecv4l2_proprietary", "libwfdmmservice_proprietary", "libhidlbase", "android.hardware.graphics.mapper@2.0", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbinder", "libmmosal", "liblog", "libutils", "libmmrtpencoder_proprietary", "libFileMux_proprietary", "libcutils", "libtinyalsa", "libwfdcommonutils_proprietary", "libwfdutils_proprietary", "libwfdconfigutils_proprietary", "libpng", "libwfdmminterface_proprietary", "libwfdcodecv4l2_proprietary", "libwfdmmservice_proprietary", "libhidlbase", "android.hardware.graphics.mapper@2.0", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
@@ -5394,7 +5394,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmialgoengine.so"],
-			shared_libs: ["libarcsoft_high_dynamic_range", "libarcsoft_low_light_hdr", "liblog", "libutils", "libcutils", "libhardware", "libnativewindow", "libEGL", "libion", "libGLESv2", "libgrallocutils", "libmpbase", "libarcsoft_beautyshot", "libmialgo_ie_capture", "libmialgo_utils", "libOpenCL", "libcdsprpc", "libalhLDC", "libalAILDC", "libarcsoft_mf_superresolution", "libbeauty_face_interface", "libmiai_portraitsupernight", "libmibokeh_855", "libxml2_vendor", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libarcsoft_high_dynamic_range", "libarcsoft_low_light_hdr", "liblog", "libutils", "libcutils", "libhardware", "libnativewindow", "libEGL", "libion", "libGLESv2", "libmpbase", "libarcsoft_beautyshot", "libmialgo_ie_capture", "libmialgo_utils", "libOpenCL", "libcdsprpc", "libalhLDC", "libalAILDC", "libarcsoft_mf_superresolution", "libbeauty_face_interface", "libmiai_portraitsupernight", "libmibokeh_855", "libxml2_vendor", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
