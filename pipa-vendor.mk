@@ -671,7 +671,6 @@ PRODUCT_PACKAGES += \
     manifest_vendor.dolby.hardware.dms.xml \
     vendor.qti.hardware.limits@1.0-service.xml \
     adsprpcd \
-    audioflacapp \
     batterysecret \
     cdsprpcd \
     dspservice \
