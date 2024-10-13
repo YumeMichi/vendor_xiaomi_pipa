@@ -299,7 +299,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
     vendor.xiaomi.hardware.touchfeature@1.0 \
-    audio.primary.kona \
+    audio.primary.pipa \
     sound_trigger.primary.kona \
     vendor.qti.hardware.audiohalext@1.0-impl \
     libFileMux_proprietary \
@@ -313,7 +313,7 @@ PRODUCT_PACKAGES += \
     libOmxG711Dec \
     libOmxQcelp13Dec \
     libOmxWmaDec \
-    liba2dpoffload \
+    liba2dpoffload_pipa \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -344,7 +344,7 @@ PRODUCT_PACKAGES += \
     libqtigef \
     libresampler \
     libsmwrapper \
-    libssrec \
+    libssrec_pipa \
     libstagefright_soft_ac4dec \
     libstagefright_soft_ddpdec \
     libstagefright_soft_qtiflacdec \
