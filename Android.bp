@@ -1092,6 +1092,48 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libsoc_helper",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libsoc_helper.so"],
+			shared_libs: ["libcutils", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsoc_helper.so"],
+			shared_libs: ["libcutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsoc_helper_jni",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libsoc_helper_jni.so"],
+			shared_libs: ["libsoc_helper", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsoc_helper_jni.so"],
+			shared_libs: ["libsoc_helper", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libsysmon_cdsp_skel",
 	owner: "xiaomi",
 	strip: {
@@ -6330,40 +6372,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsnsdiaglog.so"],
 			shared_libs: ["libprotobuf-cpp-lite-3.9.1-vendorcompat", "liblog", "libdiag", "libsensorslog", "libutils", "libcutils", "libssc", "libsnsapi", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsoc_helper",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsoc_helper.so"],
-			shared_libs: ["libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsoc_helper_jni",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsoc_helper_jni.so"],
-			shared_libs: ["libsoc_helper", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",

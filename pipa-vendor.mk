@@ -276,6 +276,8 @@ PRODUCT_PACKAGES += \
     libscveObjectTracker \
     libscveObjectTracker_stub \
     libsdsprpc \
+    libsoc_helper \
+    libsoc_helper_jni \
     libsysmon_cdsp_skel \
     libthermalclient \
     libvppclient \
@@ -576,8 +578,6 @@ PRODUCT_PACKAGES += \
     libsns_registry_skel \
     libsnsapi \
     libsnsdiaglog \
-    libsoc_helper \
-    libsoc_helper_jni \
     libspcom \
     libspl \
     libssc \
