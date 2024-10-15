@@ -282,7 +282,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
-    vendor.xiaomi.hardware.touchfeature@1.0 \
     audio.primary.pipa \
     sound_trigger.primary.kona \
     vendor.qti.hardware.audiohalext@1.0-impl \
