@@ -1268,14 +1268,15 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libvpplibrary.so"],
-			shared_libs: ["libhidlbase", "libutils", "vendor.qti.hardware.capabilityconfigstore@1.0", "libcutils", "liblog", "libqdMetaData", "libion", "libvpphvx", "libcdsprpc", "libvpphcp", "libC2D2", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libhidlbase", "libutils", "vendor.qti.hardware.capabilityconfigstore@1.0", "libcutils", "liblog", "libqdMetaData", "libion", "libvpphvx", "libcdsprpc", "libvpphcp", "libc++", "libc", "libm", "libdl", ],
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libvpplibrary.so"],
-			shared_libs: ["libhidlbase", "libutils", "vendor.qti.hardware.capabilityconfigstore@1.0", "libcutils", "liblog", "libqdMetaData", "libion", "libvpphvx", "libcdsprpc", "libvpphcp", "libC2D2", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libhidlbase", "libutils", "vendor.qti.hardware.capabilityconfigstore@1.0", "libcutils", "liblog", "libqdMetaData", "libion", "libvpphvx", "libcdsprpc", "libvpphcp", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "both",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -3877,10 +3878,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/com.qti.feature2.anchorsync.so"],
-			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "libthirdpartpkg", "com.qti.chi.override", "com.qti.feature2.gs", "libcamera_metadata", "libchilog", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "libutils", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "libion", "libOpenCL", "libcdsprpc", "libmialgo_utils", "libmialgo_rfs", "libz", "libc", "libm", "libdl", ],
+			shared_libs: ["libc++", "libcutils", "liblog", "libofflinelog", "libsync", "libthirdpartpkg", "com.qti.chi.override", "com.qti.feature2.gs", "libcamera_metadata", "libchilog", "libhardware", "libhidlbase", "libhidltransport", "libqdMetaData", "libutils", "vendor.qti.hardware.vpp@1.1", "vendor.qti.hardware.vpp@1.2", "libion", "libcdsprpc", "libmialgo_utils", "libmialgo_rfs", "libz", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -4531,7 +4533,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libalAILDC.so"],
-			shared_libs: ["libc++_shared", "liblog", "libGLESv3", "libEGL", "libnativewindow", "libOpenCL", "libc", "libm", "libdl", ],
+			shared_libs: ["libc++_shared", "liblog", "libGLESv3", "libEGL", "libnativewindow", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -4549,10 +4551,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libalCFR.so"],
-			shared_libs: ["libOpenCL", "libc++_shared", "liblog", "libc", "libm", "libdl", ],
+			shared_libs: ["libc++_shared", "liblog", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -4584,7 +4587,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libalhLDC.so"],
-			shared_libs: ["libc++_shared", "libOpenCL", "liblog", "libGLESv3", "libEGL", "libnativewindow", "libc", "libm", "libdl", ],
+			shared_libs: ["libc++_shared", "liblog", "libGLESv3", "libEGL", "libnativewindow", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -4721,10 +4724,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libarcsoft_portrait_lighting_c.so"],
-			shared_libs: ["libOpenCL", "liblog", "libdl", "libc", "libm", ],
+			shared_libs: ["liblog", "libdl", "libc", "libm", ],
 		},
 	},
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -4755,10 +4759,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libarcsoft_super_night_raw.so"],
-			shared_libs: ["libmpbase", "libcdsprpc", "libOpenCL", "liblog", "libc", "libm", "libdl", ],
+			shared_libs: ["libmpbase", "libcdsprpc", "liblog", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -5520,10 +5525,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmi_supernight_raw.so"],
-			shared_libs: ["liblog", "libion", "librawnrv2_shared", "libm", "libz", "libOpenCL", "libc", "libdl", ],
+			shared_libs: ["liblog", "libion", "librawnrv2_shared", "libm", "libz", "libc", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -5537,10 +5543,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmiai_portraitsupernight.so"],
-			shared_libs: ["libm", "liblog", "libz", "libOpenCL", "libbeauty_face_interface", "libc", "libdl", ],
+			shared_libs: ["libm", "liblog", "libz", "libbeauty_face_interface", "libc", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -5554,10 +5561,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmialgo_ie_capture.so"],
-			shared_libs: ["libSNPE", "libmialgo_utils", "libcdsprpc", "libOpenCL", "libc++_shared", "libm", "liblog", "libz", "libc", "libGLESv3", "libEGL", "libdl", ],
+			shared_libs: ["libSNPE", "libmialgo_utils", "libcdsprpc", "libc++_shared", "libm", "liblog", "libz", "libc", "libGLESv3", "libEGL", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -5571,10 +5579,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmialgo_rfs.so"],
-			shared_libs: ["liblog", "libOpenCL", "libcdsprpc", "libmialgo_utils", "libc++_shared", "libm", "libdl", "libc", ],
+			shared_libs: ["liblog", "libcdsprpc", "libmialgo_utils", "libc++_shared", "libm", "libdl", "libc", ],
 		},
 	},
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -5622,7 +5631,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmialgoengine.so"],
-			shared_libs: ["libarcsoft_high_dynamic_range", "libarcsoft_low_light_hdr", "liblog", "libutils", "libcutils", "libhardware", "libnativewindow", "libEGL", "libion", "libGLESv2", "libmpbase", "libarcsoft_beautyshot", "libmialgo_ie_capture", "libmialgo_utils", "libOpenCL", "libcdsprpc", "libalhLDC", "libalAILDC", "libarcsoft_mf_superresolution", "libbeauty_face_interface", "libmiai_portraitsupernight", "libmibokeh_855", "libxml2_vendor", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libarcsoft_high_dynamic_range", "libarcsoft_low_light_hdr", "liblog", "libutils", "libcutils", "libhardware", "libnativewindow", "libEGL", "libion", "libGLESv2", "libmpbase", "libarcsoft_beautyshot", "libmialgo_ie_capture", "libmialgo_utils", "libcdsprpc", "libalhLDC", "libalAILDC", "libarcsoft_mf_superresolution", "libbeauty_face_interface", "libmiai_portraitsupernight", "libmibokeh_855", "libxml2_vendor", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -5640,10 +5649,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmibokeh_855.so"],
-			shared_libs: ["libOpenCL", "liblog", "libz", "libm", "libdl", "libc", ],
+			shared_libs: ["liblog", "libz", "libm", "libdl", "libc", ],
 		},
 	},
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -6014,10 +6024,11 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/librawnrv2_shared.so"],
-			shared_libs: ["libOpenCL", "libm", "libz", "liblog", "libion", "libSNPE", "libdl", "libc", ],
+			shared_libs: ["libm", "libz", "liblog", "libion", "libSNPE", "libdl", "libc", ],
 		},
 	},
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
