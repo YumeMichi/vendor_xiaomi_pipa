@@ -706,7 +706,6 @@ PRODUCT_PACKAGES += \
     pd-mapper \
     pm-proxy \
     pm-service \
-    ppd \
     qrtr-ns \
     qseecomd \
     rmt_storage \
