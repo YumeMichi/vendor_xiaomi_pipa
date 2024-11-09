@@ -256,7 +256,7 @@ PRODUCT_PACKAGES += \
     libidl \
     libmdmdetect \
     libmdsprpc \
-    libmmosal \
+    libmmosal_vendor \
     libnpu \
     libopenvx \
     libqmi \
@@ -266,7 +266,6 @@ PRODUCT_PACKAGES += \
     libqmi_csi \
     libqmi_encdec \
     libqmiservices \
-    libqrtr \
     libqsocket \
     libscveCommon \
     libscveCommon_stub \
@@ -378,7 +377,7 @@ PRODUCT_PACKAGES += \
     libswgamedap \
     libswvqe \
     vendor.qti.hardware.audiohalext@1.0 \
-    vendor.qti.hardware.wifidisplaysession@1.0 \
+    vendor.qti.hardware.wifidisplaysession@1.0_vendor \
     vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
     vendor.qti.voiceprint@1.0 \
     libxlog \
@@ -508,8 +507,6 @@ PRODUCT_PACKAGES += \
     libcvp_common \
     libcvpcpuRev_skel \
     libdisp-aba \
-    libdisplayqos \
-    libdisplayskuutils \
     libdlbdsservice \
     libdpps \
     libdrmfs \
@@ -518,7 +515,6 @@ PRODUCT_PACKAGES += \
     libhdcp1prov \
     libhdcp2p2prov \
     libhdcpsrm \
-    libhdr_tm \
     libhexagon_nn_stub \
     libipebpsstriping \
     libkeymasterdeviceutils \
@@ -553,16 +549,10 @@ PRODUCT_PACKAGES += \
     libpvr \
     libqcbor \
     libqisl \
-    libqseed3 \
     libqtikeymaster4 \
     librawnrv2_shared \
     librmp \
     librpmb \
-    libsdm-color \
-    libsdm-colormgr-algo \
-    libsdm-diag \
-    libsdm-disp-vndapis \
-    libsdmextension \
     libsensorcal \
     libsensorslog \
     libsnpe_adsp \
@@ -589,7 +579,6 @@ PRODUCT_PACKAGES += \
     libthirdpartpkg \
     libthreadutils \
     libtime_genoff \
-    libtinyxml2_1 \
     libtriplecam_optical_zoom_control \
     libtrustedapploader \
     libtzdrmgenprov \
@@ -604,19 +593,12 @@ PRODUCT_PACKAGES += \
     unnhal-acc-adreno \
     unnhal-acc-common \
     unnhal-acc-hvx \
-    vendor.display.color@1.0 \
-    vendor.display.color@1.1 \
-    vendor.display.color@1.2 \
-    vendor.display.color@1.3 \
-    vendor.display.color@1.4 \
-    vendor.display.color@1.5 \
-    vendor.display.postproc@1.0 \
     vendor.dolby.hardware.dms@2.0-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.cvp@1.0 \
     vendor.qti.hardware.factory@1.0 \
     vendor.qti.hardware.factory@1.1 \
-    vendor.qti.hardware.limits@1.0 \
+    vendor.qti.hardware.limits@1.0_vendor \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
@@ -674,7 +656,7 @@ PRODUCT_PACKAGES += \
     feature_enabler_client \
     hdcp1prov \
     hdcp2p2prov \
-    hvdcp_opti \
+    hvdcp_opti_pipa \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.gatekeeper@1.0-service-qti \
