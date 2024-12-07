@@ -289,16 +289,6 @@ PRODUCT_PACKAGES += \
     sound_trigger.primary.kona \
     vendor.qti.hardware.audiohalext@1.0-impl \
     libFileMux_proprietary \
-    libOmxAacDec \
-    libOmxAlacDec \
-    libOmxAmrDec \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxDsdDec \
-    libOmxEvrcDec \
-    libOmxG711Dec \
-    libOmxQcelp13Dec \
-    libOmxWmaDec \
     liba2dpoffload_pipa \
     libacdb-fts \
     libacdbloader \
@@ -314,7 +304,6 @@ PRODUCT_PACKAGES += \
     libaudioparsers \
     libaudioroute_ext \
     libdrc \
-    libdsd2pcm \
     libgcs-calwrapper \
     libgcs-ipc \
     libgcs-osal \
