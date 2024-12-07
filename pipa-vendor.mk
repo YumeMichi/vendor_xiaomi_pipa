@@ -319,7 +319,6 @@ PRODUCT_PACKAGES += \
     libsmwrapper \
     libssrec_pipa \
     libstagefright_soft_qtiflacdec \
-    libstreamparser \
     libsurround_3mic_proc \
     libtinycompress \
     libwfdcodecv4l2_proprietary \

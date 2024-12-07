@@ -9,6 +9,7 @@ soong_namespace {
 		"vendor/qcom/common/vendor/adreno-r",
 		"vendor/qcom/common/vendor/display",
 		"vendor/qcom/common/vendor/display/4.19",
+		"vendor/qcom/common/vendor/media-legacy",
 	],
 }
 
@@ -1963,23 +1964,6 @@ cc_prebuilt_library_shared {
 		android_arm: {
 			srcs: ["proprietary/vendor/lib/libstagefright_soft_qtiflacdec.so"],
 			shared_libs: ["libstagefright_softomx", "libstagefright_foundation", "libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "32",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libstreamparser",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libstreamparser.so"],
-			shared_libs: ["libvideoutils", "liblog", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "32",
