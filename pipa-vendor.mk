@@ -285,9 +285,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.scve.objecttracker@1.0 \
     vendor.qti.hardware.scve.panorama@1.0 \
-    vendor.qti.hardware.vpp@1.1 \
-    vendor.qti.hardware.vpp@1.2 \
-    vendor.qti.hardware.vpp@1.3 \
     audio.primary.pipa \
     sound_trigger.primary.kona \
     vendor.qti.hardware.audiohalext@1.0-impl \
@@ -318,7 +315,6 @@ PRODUCT_PACKAGES += \
     libaudioroute_ext \
     libdrc \
     libdsd2pcm \
-    libfastcrc \
     libgcs-calwrapper \
     libgcs-ipc \
     libgcs-osal \
@@ -337,7 +333,6 @@ PRODUCT_PACKAGES += \
     libstreamparser \
     libsurround_3mic_proc \
     libtinycompress \
-    libvideoutils \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
     libwfdconfigutils_proprietary \
