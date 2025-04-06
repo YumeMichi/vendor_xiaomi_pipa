@@ -74,6 +74,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/keymasterd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/keymasterd.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
+    vendor/xiaomi/pipa/proprietary/vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/vendor.qti.adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-service.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
@@ -244,6 +245,7 @@ PRODUCT_PACKAGES += \
     libcapiv2vop \
     libcdsp_default_listener \
     libcdsprpc \
+    libdapparamstorage-v34_cancunf \
     libdiag \
     libdsutils \
     libfastcvdsp_stub \
@@ -254,6 +256,7 @@ PRODUCT_PACKAGES += \
     libmdsprpc \
     libmmosal_vendor \
     libnpu \
+    liboem_specific \
     libopenvx \
     libqmi \
     libqmi_cci \
@@ -272,6 +275,7 @@ PRODUCT_PACKAGES += \
     libsdsprpc \
     libsoc_helper \
     libsoc_helper_jni \
+    libstagefright_foundation-v34_cancunf \
     libsysmon_cdsp_skel \
     libthermalclient \
     libvppclient \
@@ -281,6 +285,7 @@ PRODUCT_PACKAGES += \
     libvpplibrary \
     libvpptestutils \
     unnhal-acc-hta \
+    vendor.dolby.hardware.dms@2.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.dsp@1.0 \
@@ -472,12 +477,16 @@ PRODUCT_PACKAGES += \
     libcamxtintlessalgo \
     libcdsprpc_system \
     libchilog \
+    libcodec2_soft_ac4dec \
+    libcodec2_soft_ddpdec \
+    libcodec2_store_dolby \
     libcom.qti.chinodeutils \
     libcpion \
     libcvp2 \
     libcvp2_hfi \
     libcvp_common \
     libcvpcpuRev_skel \
+    libdeccfg \
     libdisp-aba \
     libdpps \
     libdrmfs \
@@ -643,6 +652,7 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1-service-qti \
     android.hardware.neuralnetworks@1.3-service-qti \
     vendor.display.color@1.0-service \
+    vendor.dolby.media.c2@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor.qti.hardware.factory@1.0-service \
     vendor.qti.hardware.limits@1.0-service \
