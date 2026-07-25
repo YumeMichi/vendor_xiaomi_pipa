@@ -622,7 +622,6 @@ PRODUCT_PACKAGES += \
     feature_enabler_client \
     hdcp1prov \
     hdcp2p2prov \
-    hvdcp_opti_pipa \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm@1.3-service.widevine \
     vendor.display.color@1.0-service \
