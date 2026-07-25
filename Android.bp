@@ -9,6 +9,7 @@ soong_namespace {
         "vendor/qcom/common/vendor/adreno-r",
         "vendor/qcom/common/vendor/display",
         "vendor/qcom/common/vendor/display/4.19",
+        "vendor/qcom/common/vendor/keymaster",
         "vendor/qcom/common/vendor/media/legacy",
     ],
 }
@@ -7296,38 +7297,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.gatekeeper@1.0-impl-qti",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so",
-            ],
-            shared_libs: [
-                "android.hardware.gatekeeper@1.0",
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libkeymasterdeviceutils",
-                "libqcbor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "camera.qcom",
     owner: "xiaomi",
     strip: {
@@ -9383,93 +9352,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libkeymasterdeviceutils",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libkeymasterdeviceutils.so",
-            ],
-            shared_libs: [
-                "libion",
-                "libcutils",
-                "libQSEEComAPI",
-                "liblog",
-                "libcrypto",
-                "libspcom",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libkeymasterprovision",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libkeymasterprovision.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcrypto",
-                "libkeymasterdeviceutils",
-                "libkeymasterutils",
-                "libqcbor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libkeymasterutils",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libkeymasterutils.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libQSEEComAPI",
-                "liblog",
-                "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libloadalgo_stub",
     owner: "xiaomi",
     strip: {
@@ -10221,33 +10103,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqcbor",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqcbor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqisl",
     owner: "xiaomi",
     strip: {
@@ -10262,41 +10117,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libQSEEComAPI",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqtikeymaster4",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqtikeymaster4.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcrypto",
-                "libhidlbase",
-                "libutils",
-                "libcutils",
-                "libkeymasterdeviceutils",
-                "libkeymasterutils",
-                "libbase",
-                "libqcbor",
-                "android.hardware.keymaster@4.0",
-                "android.hardware.keymaster@4.1",
                 "libc++",
                 "libc",
                 "libm",
@@ -10758,35 +10578,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libssc",
                 "libsnsapi",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libspcom",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libspcom.so",
-            ],
-            shared_libs: [
-                "libion",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libcrypto",
                 "libc++",
                 "libc",
                 "libm",
@@ -12810,105 +12601,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.gatekeeper@1.0-service-qti",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti",
-            ],
-            shared_libs: [
-                "android.hardware.gatekeeper@1.0",
-                "libhardware",
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.keymaster@4.0-service-qti",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhardware",
-                "libhidlbase",
-                "android.hardware.keymaster@4.0",
-                "libqtikeymaster4",
-                "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.keymaster@4.1-service-qti",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.keymaster@4.1-service-qti",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libbase",
-                "libutils",
-                "libhardware",
-                "libhidlbase",
-                "android.hardware.keymaster@4.0",
-                "android.hardware.keymaster@4.1",
-                "libqtikeymaster4",
-                "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "vendor.display.color@1.0-service",
     owner: "xiaomi",
     target: {
@@ -13267,41 +12959,6 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "keymasterd",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/keymasterd",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libhidlbase",
-                "libQSEEComAPI",
-                "libkeymasterdeviceutils",
-                "libkeymasterutils",
-                "libbase",
-                "android.hardware.keymaster@4.0",
-                "libcrypto",
-                "libspcom",
                 "libc++",
                 "libc",
                 "libm",

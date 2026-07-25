@@ -60,8 +60,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
-    vendor/xiaomi/pipa/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
-    vendor/xiaomi/pipa/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service-qti.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/feature_enabler_client.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/feature_enabler_client.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.batterysecret.rc \
@@ -70,7 +68,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/init_thermal-engine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine.rc \
-    vendor/xiaomi/pipa/proprietary/vendor/etc/init/keymasterd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/keymasterd.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
@@ -420,7 +417,6 @@ PRODUCT_PACKAGES += \
     com.qti.feature2.sr \
     com.qti.feature2.stub \
     com.qti.feature2.swmf \
-    android.hardware.gatekeeper@1.0-impl-qti \
     camera.qcom \
     com.qti.chi.override \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
@@ -491,9 +487,6 @@ PRODUCT_PACKAGES += \
     libhdcp2p2prov \
     libhdcpsrm \
     libipebpsstriping \
-    libkeymasterdeviceutils \
-    libkeymasterprovision \
-    libkeymasterutils \
     libloadalgo_stub \
     libmdmimgload \
     libmi_supernight_raw \
@@ -521,9 +514,7 @@ PRODUCT_PACKAGES += \
     libpdnotifier \
     libperipheral_client \
     libpvr \
-    libqcbor \
     libqisl \
-    libqtikeymaster4 \
     librawnrv2_shared \
     librmp \
     librpmb \
@@ -541,7 +532,6 @@ PRODUCT_PACKAGES += \
     libsns_registry_skel \
     libsnsapi \
     libsnsdiaglog \
-    libspcom \
     libspl \
     libssc \
     libssc_default_listener \
@@ -635,9 +625,6 @@ PRODUCT_PACKAGES += \
     hvdcp_opti_pipa \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm@1.3-service.widevine \
-    android.hardware.gatekeeper@1.0-service-qti \
-    android.hardware.keymaster@4.0-service-qti \
-    android.hardware.keymaster@4.1-service-qti \
     vendor.display.color@1.0-service \
     vendor.dolby.media.c2@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
@@ -651,7 +638,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sensors \
     init.qti.qcv \
     irsc_util \
-    keymasterd \
     ks \
     loadalgo \
     mdm_helper \
