@@ -55,6 +55,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/pipa/proprietary/vendor/etc/configstore/wigig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/wigig.xml \
     vendor/xiaomi/pipa/proprietary/vendor/etc/default.lm:$(TARGET_COPY_OUT_VENDOR)/etc/default.lm \
     vendor/xiaomi/pipa/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
+    vendor/xiaomi/pipa/proprietary/vendor/etc/displayconfig/display_id_4630946808805831297.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946808805831297.xml \
+    vendor/xiaomi/pipa/proprietary/vendor/etc/displayconfig/display_id_4630946922172900481.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946922172900481.xml \
     vendor/xiaomi/pipa/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/xiaomi/pipa/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
