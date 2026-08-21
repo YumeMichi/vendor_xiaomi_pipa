@@ -213,7 +213,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@2.0-impl \
     vendor.qti.hardware.fm@1.0-impl \
     vendor.xiaomi.hardware.touchfeature@1.0-impl \
-    libOmxVpp \
     libadsp_default_listener \
     libadsprpc \
     libbluetooth_audio_session_qti \
